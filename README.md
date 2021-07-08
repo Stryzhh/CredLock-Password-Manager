@@ -29,4 +29,5 @@ The application consisits of many features:
   * Straight forward and responsive design 
   * FXML and CSS implementation
 
-## Overview
+## Author(s)
+[Dafydd Maund](https://github.com/Stryzhh)
