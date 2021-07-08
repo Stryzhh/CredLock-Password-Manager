@@ -6,8 +6,6 @@
 This program simply allows you to store your personal data such as usernames and passwords for websites and applications.
 
 ## Features
-
-These are the features of the application:
 * MySQL database connection
 * Login with or register an account
 * Manage account details
@@ -17,5 +15,5 @@ These are the features of the application:
 * Website/Appication credentials secured with encryption
 * FXML and CSS implementation
 
-## Author
+## Author(s)
 * [Dafydd Maund](https://github.com/Stryzhh)
