@@ -13,19 +13,20 @@ The application consisits of many features:
   *  Amend existing account
 
 * Manage website/application credentials
-  * View details
-  * Add details
-  * Amend details
-  * Delete details
+  * View saved credentials
+  * Add new credentials
+  * Amend existing credentials
+  * Delete existing credentials
 
 * Security
-  * MySQL database connection
+  * MySQL database implementation
   * Account details secured with hashing algorithm
-  * Details secured with encryption
+  * Website credentials secured with encryption
   * Email verification
 
-* Nice-Looking GUI
-  * Straight forward and responsive design 
+* GUI
+  * Nice-looking GUI
+  * Straight forward and responsive design
   * FXML and CSS implementation
 
 ## Note
