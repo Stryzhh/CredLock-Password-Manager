@@ -1,5 +1,4 @@
 # CredLock-Password-Manager
-Dont use this application seriously, the code is public and your data would be unsafe.
 
 ## Overview
 This program simply allows you to store your personal data such as usernames and passwords for websites and applications.
@@ -28,6 +27,9 @@ The application consisits of many features:
 * Nice-Looking GUI
   * Straight forward and responsive design 
   * FXML and CSS implementation
+
+## NOTE
+DONT USE THIS APPLICATION SERIOUSLY, THE CODE IS PUBLIC AND WOULD PUT YOUR CREDENTIALS AT RISK.
 
 ## Author(s)
 * [Dafydd Maund](https://github.com/Stryzhh)
