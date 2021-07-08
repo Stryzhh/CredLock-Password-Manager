@@ -30,4 +30,4 @@ The application consisits of many features:
   * FXML and CSS implementation
 
 ## Author(s)
-[Dafydd Maund](https://github.com/Stryzhh)
+* [Dafydd Maund](https://github.com/Stryzhh)
