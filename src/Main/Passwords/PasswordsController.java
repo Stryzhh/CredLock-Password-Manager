@@ -152,6 +152,7 @@ public class PasswordsController implements Initializable {
         newWindow.initStyle(StageStyle.UNDECORATED);
         newWindow.setTitle(title);
         newWindow.setScene(new Scene(window));
+        newWindow.getIcons().add(new javafx.scene.image.Image("icon.png"));
         newWindow.show();
     }
 

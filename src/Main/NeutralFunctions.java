@@ -47,6 +47,7 @@ public class NeutralFunctions {
 
         nextWindow.initStyle(StageStyle.UNDECORATED);
         nextWindow.setScene(new Scene(next, 360, 570));
+        nextWindow.getIcons().add(new javafx.scene.image.Image("icon.png"));
         nextWindow.show();
         thisWindow.close();
     }

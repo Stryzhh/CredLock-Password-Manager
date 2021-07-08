@@ -1,6 +1,7 @@
 package Main;
 
 import Main.Data.LoggedData;
+import java.awt.*;
 import java.io.File;
 import java.io.FileReader;
 import java.sql.Connection;
@@ -13,6 +14,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javax.swing.*;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
@@ -56,9 +58,27 @@ public class Main extends Application {
                         .getClassLoader().getResource("Main/Login/login.fxml")));
             }
 
+            //adds tray icon
+            PopupMenu popupMenu = new PopupMenu();
+            ImageIcon logo = new ImageIcon("src/icon.png");
+            Image image = logo.getImage();
+
+            SystemTray tray = SystemTray.getSystemTray();
+            Image trayImage = image.getScaledInstance(tray.getTrayIconSize().width,
+                    tray.getTrayIconSize().height, java.awt.Image.SCALE_SMOOTH);
+            TrayIcon trayIcon = new TrayIcon(trayImage, "CredLock", popupMenu);
+
+            MenuItem exitMenuItem = new MenuItem("Exit");
+            exitMenuItem.addActionListener(e -> tray.remove(trayIcon));
+            exitMenuItem.addActionListener(e -> System.exit(0));
+            popupMenu.add(exitMenuItem);
+            tray.add(trayIcon);
+
+            //opens window
             assert nextWindow != null;
             window.initStyle(StageStyle.UNDECORATED);
             window.setScene(new Scene(nextWindow, 360, 570));
+            window.getIcons().add(new javafx.scene.image.Image("icon.png"));
             window.show();
         }
     }
