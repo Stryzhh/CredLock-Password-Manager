@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#drag" prefHeight="570.0" prefWidth="360.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Login.LoginController">
+   <JFXButton layoutX="221.0" layoutY="359.0" onAction="#login" prefHeight="33.0" prefWidth="80.0" style="-fx-background-color: #246de1;" text="Login" textFill="WHITE" />
+   <TextField fx:id="username" layoutX="88.0" layoutY="259.0" prefHeight="33.0" prefWidth="213.0" promptText="Username" style="-fx-background-color: #00000000; -fx-border-color: #b9b9b9; -fx-border-width: 0 0 1 0; -fx-text-fill: #b9b9b9;" />
+   <PasswordField fx:id="password" layoutX="88.0" layoutY="306.0" prefHeight="33.0" prefWidth="213.0" promptText="Password" style="-fx-background-color: #00000000; -fx-border-color: #b9b9b9; -fx-border-width: 0 0 1 0; -fx-text-fill: #b9b9b9;" />
+   <TextField fx:id="field" layoutX="88.0" layoutY="306.0" prefHeight="33.0" prefWidth="213.0" promptText="Password" style="-fx-background-color: #00000000; -fx-border-color: #b9b9b9; -fx-border-width: 0 0 1 0; -fx-text-fill: #b9b9b9;" />
+   <ImageView fx:id="usernameIcon" fitHeight="26.0" fitWidth="26.0" layoutX="55.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../images/username.png" />
+   </ImageView>
+   <ImageView fx:id="passwordIcon" fitHeight="26.0" fitWidth="26.0" layoutX="55.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../images/password.png" />
+   </ImageView>
+   <JFXCheckBox fx:id="remember" checkedColor="#b9b9b9" layoutX="61.0" layoutY="359.0" prefHeight="33.0" prefWidth="150.0" style="-fx-text-fill: #b9b9b9;" text="Remember me" unCheckedColor="#b9b9b9">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </JFXCheckBox>
+   <Label layoutX="58.0" layoutY="405.0" prefHeight="18.0" prefWidth="246.0" style="-fx-text-fill: #b9b9b9;" text="------------------------ or -----------------------" textFill="#b9b9b9" />
+   <Label layoutX="119.0" layoutY="162.0" style="-fx-text-fill: #b9b9b9; -fx-text-fill: #3d97eb;" text="Cred" textFill="#3d97eb">
+      <font>
+         <Font size="30.0" />
+      </font>
+   </Label>
+   <JFXButton alignment="CENTER_RIGHT" layoutX="130.0" layoutY="216.0" minWidth="37.0" onAction="#forgot" prefHeight="21.0" prefWidth="103.0" style="-fx-background-color: #00000000; -fx-text-fill: #b9b9b9; -fx-font-size: 10; -fx-font-weight: bold;" text="Forgot Credentials" textFill="#b9b9b9">
+      <font>
+         <Font name="System Bold" size="86.0" />
+      </font>
+   </JFXButton>
+   <JFXButton layoutX="111.0" layoutY="434.0" minWidth="37.0" onAction="#register" prefHeight="33.0" prefWidth="141.0" style="-fx-background-color: #00000000; -fx-text-fill: #b9b9b9;" text="Register an account" textFill="#b9b9b9">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </JFXButton>
+   <Label layoutX="180.0" layoutY="162.0" style="-fx-text-fill: #b9b9b9;" text="Lock">
+      <font>
+         <Font size="30.0" />
+      </font>
+   </Label>
+   <ImageView fx:id="companyIcon" fitHeight="99.0" fitWidth="91.0" layoutX="136.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../images/icon.png" />
+   </ImageView>
+   <Label fx:id="errorLabel" layoutX="90.0" layoutY="245.0" textFill="#ff7474" />
+   <JFXCheckBox fx:id="show" checkedColor="#b9b9b9" layoutX="310.0" layoutY="314.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="16.0" style="-fx-text-fill: #b9b9b9;" unCheckedColor="#b9b9b9">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </JFXCheckBox>
+   <JFXButton layoutX="326.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#exitApplication" prefHeight="20.0" prefWidth="30.0" style="-fx-graphic: url('@../../../images/email.png'); -fx-background-image: url('@../../../images/email.png');">
+      <graphic>
+         <ImageView fx:id="closeIcon" fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/grey-cross.png" />
+            </image>
+         </ImageView>
+      </graphic>
+   </JFXButton>
+   <JFXButton layoutX="293.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#minimize" prefHeight="20.0" prefWidth="30.0" style="-fx-graphic: url('@../../../images/email.png'); -fx-background-image: url('@../../../images/email.png');">
+      <graphic>
+         <ImageView fx:id="minimizeIcon" fitHeight="14.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/minimize.png" />
+            </image>
+         </ImageView>
+      </graphic>
+   </JFXButton>
+</AnchorPane>

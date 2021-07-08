@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#drag" prefHeight="363.0" prefWidth="300.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.AddPassword.AddController">
+   <children>
+      <Label layoutX="14.0" layoutY="28.0" style="-fx-text-fill: #3d97eb;" text="Add Credentials" textFill="#3d97eb">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="56.0" style="-fx-text-fill: #b9b9b9;" text="Enter the new credential details here" textFill="#b9b9b9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="195.0" layoutY="314.0" onMouseClicked="#add" prefHeight="39.0" prefWidth="96.0" style="-fx-background-color: #246de1;" text="Add Password" textFill="WHITE" />
+      <JFXButton layoutX="267.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#close" prefHeight="20.0" prefWidth="30.0" style="-fx-graphic: url('@../../../images/email.png'); -fx-background-image: url('@../../../images/email.png');">
+         <graphic>
+            <ImageView fx:id="closeIcon" fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/grey-cross.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <TextField fx:id="website" layoutX="70.0" layoutY="103.0" prefHeight="33.0" prefWidth="191.0" promptText="Website" style="-fx-background-color: #00000000; -fx-border-color: #b9b9b9; -fx-border-width: 0 0 1 0; -fx-text-fill: #b9b9b9;" />
+      <TextField fx:id="username" layoutX="70.0" layoutY="148.0" prefHeight="33.0" prefWidth="191.0" promptText="Username" style="-fx-background-color: #00000000; -fx-border-color: #b9b9b9; -fx-border-width: 0 0 1 0; -fx-text-fill: #b9b9b9;" />
+      <PasswordField fx:id="password" layoutX="70.0" layoutY="195.0" prefHeight="33.0" prefWidth="191.0" promptText="Password" style="-fx-background-color: #00000000; -fx-border-color: #b9b9b9; -fx-border-width: 0 0 1 0; -fx-text-fill: #b9b9b9;" />
+      <PasswordField fx:id="confirmPassword" layoutX="70.0" layoutY="243.0" prefHeight="33.0" prefWidth="191.0" promptText="Confirm Password" style="-fx-background-color: #00000000; -fx-border-color: #b9b9b9; -fx-border-width: 0 0 1 0; -fx-text-fill: #b9b9b9;" />
+      <TextField fx:id="field" layoutX="70.0" layoutY="196.0" prefHeight="32.0" prefWidth="191.0" promptText="Password" style="-fx-background-color: #00000000; -fx-border-color: #b9b9b9; -fx-border-width: 0 0 1 0; -fx-text-fill: #b9b9b9;" />
+      <TextField fx:id="confirmField" layoutX="70.0" layoutY="244.0" prefHeight="32.0" prefWidth="191.0" promptText="Confirm Password" style="-fx-background-color: #00000000; -fx-border-color: #b9b9b9; -fx-border-width: 0 0 1 0; -fx-text-fill: #b9b9b9;" />
+      <ImageView fx:id="websiteIcon" fitHeight="26.0" fitWidth="26.0" layoutX="39.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/website.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="usernameIcon" fitHeight="26.0" fitWidth="26.0" layoutX="39.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/username.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="passwordIcon" fitHeight="26.0" fitWidth="26.0" layoutX="39.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/password.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="confirmIcon" fitHeight="26.0" fitWidth="26.0" layoutX="39.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/confirm.png" />
+         </image>
+      </ImageView>
+      <JFXCheckBox fx:id="show" checkedColor="#b9b9b9" layoutX="268.0" layoutY="202.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="16.0" style="-fx-text-fill: #b9b9b9;" unCheckedColor="#b9b9b9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="showConfirm" checkedColor="#b9b9b9" layoutX="268.0" layoutY="251.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="16.0" style="-fx-text-fill: #b9b9b9;" unCheckedColor="#b9b9b9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXButton fx:id="minimize" layoutX="233.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#minimize" prefHeight="20.0" prefWidth="30.0" style="-fx-graphic: url('@../../../images/email.png'); -fx-background-image: url('@../../../images/email.png');">
+         <graphic>
+            <ImageView fx:id="minimizeIcon" fitHeight="14.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/minimize.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+   <effect>
+      <InnerShadow blurType="ONE_PASS_BOX" height="15.0" radius="7.0" width="15.0">
+         <input>
+            <DisplacementMap>
+               <mapData>
+                  <FloatMap />
+               </mapData>
+            </DisplacementMap>
+         </input>
+      </InnerShadow>
+   </effect>
+</AnchorPane>
