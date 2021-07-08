@@ -28,6 +28,3 @@ The application consisits of many features:
 * Nice-Looking GUI
   * Straight forward and responsive design 
   * FXML and CSS implementation
-
-## Author(s)
-* [Dafydd Maund](https://github.com/Stryzhh)
