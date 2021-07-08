@@ -28,7 +28,7 @@ The application consisits of many features:
   * Straight forward and responsive design 
   * FXML and CSS implementation
 
-## NOTE
+## Note
 DONT USE THIS APPLICATION SERIOUSLY, THE CODE IS PUBLIC AND WOULD PUT YOUR CREDENTIALS AT RISK.
 
 ## Author(s)
